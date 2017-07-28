@@ -4,6 +4,7 @@
   "description": "superscript chat bot intergrated into a gitter room",
   "main": "index.js",
   "scripts": {
+    "clean-db": "node ./node_modules/superscript/lib/bin/cleanup.js --importFile ./data/data.json",
     "parse-bot-scripts": "node ./node_modules/superscript/lib/bin/parse.js -p ./chat -o ./data/data.json -f true",
     "start-faye-client": "node index.js",
     "start": "npm run parse-bot-scripts && npm run start-faye-client",
@@ -28,6 +29,7 @@
   "dependencies": {
     "config": "^1.26.1",
     "faye": "^1.2.4",
+    "is-plural": "^0.1.1",
     "request": "^2.81.0",
     "superscript": "^1.1.1"
   }

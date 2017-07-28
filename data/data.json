@@ -1,90 +1,171 @@
 {
     "topics": {
-        "greetings": {
-            "name": "greetings",
+        "main": {
+            "name": "main",
             "flags": {
                 "keep": "keep"
             },
             "keywords": [],
             "filter": null,
             "gambits": [
-                "eJNq9mYJ",
-                "g4sHWf1b"
+                "TsHNWjjY",
+                "00MOMsPt",
+                "yeRaiF05",
+                "T5P5E79Q",
+                "VP2U8eVA"
             ]
         }
     },
     "gambits": {
-        "eJNq9mYJ": {
+        "TsHNWjjY": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "(hi|hello|greetings|hola|hay) [@tablebot]",
+                "clean": "(?=^|\\s)\\s*(hi|hello|greetings|hola|hay)(?=\\s|$)\\s*(?:(?:\\s|\\b)+(?:@tablebot)(?:\\s|\\b)+|(?:\\s|\\b)+)"
+            },
+            "replies": [
+                "lsqRkL8a",
+                "Vpo1bKsd",
+                "oErTgP7u",
+                "TvFayRg1"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "main"
+        },
+        "00MOMsPt": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "[@]tablebot what * in *~2",
+                "clean": "(?:(?:\\s|\\b)+(?:@)(?:\\s|\\b)+|(?:\\s|\\b)+)tablebot what(?:(?=^|\\s)\\s*(?:.*)(?=\\s|$)\\s*)?in\\s*((?:[^\\s]+\\s+){0,1}(?:[^\\s]+)?)\\s*"
+            },
+            "replies": [
+                "mDt55CkI"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "main"
+        },
+        "yeRaiF05": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "[@]tablebot * calories in *~2",
+                "clean": "(?:(?:\\s|\\b)+(?:@)(?:\\s|\\b)+|(?:\\s|\\b)+)tablebot(?:(?=^|\\s)\\s*(?:.*)(?=\\s|$)\\s*)?calories in\\s*((?:[^\\s]+\\s+){0,1}(?:[^\\s]+)?)\\s*"
+            },
+            "replies": [
+                "VDTUT8g2"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "main"
+        },
+        "T5P5E79Q": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "help",
+                "clean": "help"
+            },
+            "replies": [
+                "cFktJFQi"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "main"
+        },
+        "VP2U8eVA": {
             "trigger": {
                 "flags": {
                     "order": "ordered"
                 },
                 "filter": null,
                 "question": false,
-                "raw": "(hi|hello|greetings|hola|hay)",
-                "clean": "(?=^|\\s)\\s*(hi|hello|greetings|hola|hay)(?=\\s|$)\\s*"
+                "raw": "*",
+                "clean": "(?:(?=^|\\s)\\s*(?:.*)(?=\\s|$)\\s*)?"
             },
             "replies": [
-                "APZkBtT1",
-                "oZbzauO6",
-                "KMiF4378",
-                "17f4eEwu"
+                "zGj3vrcW",
+                "jjBBlztF",
+                "UqhXhauj",
+                "ZkgmJCfC",
+                "OXlJaD3P"
             ],
             "conditional": null,
             "conversation": null,
-            "topic": "greetings"
-        },
-        "g4sHWf1b": {
-            "trigger": {
-                "flags": {},
-                "filter": null,
-                "question": false,
-                "raw": "whats up",
-                "clean": "what is up"
-            },
-            "replies": [
-                "dT6dQ1bc",
-                "hNcnUihP"
-            ],
-            "conditional": null,
-            "conversation": null,
-            "topic": "greetings"
+            "topic": "main"
         }
     },
     "replies": {
-        "APZkBtT1": {
+        "lsqRkL8a": {
             "string": "hello you",
             "filter": null,
             "keep": false
         },
-        "oZbzauO6": {
+        "Vpo1bKsd": {
             "string": "hi again",
             "filter": null,
             "keep": false
         },
-        "KMiF4378": {
-            "string": "yes hello",
+        "oErTgP7u": {
+            "string": "yes ((hello|hi|hola))",
             "filter": null,
             "keep": false
         },
-        "17f4eEwu": {
-            "string": "what you need?",
+        "TvFayRg1": {
+            "string": "how ((doo|di do di))",
             "filter": null,
             "keep": false
         },
-        "dT6dQ1bc": {
-            "string": "just chilling",
+        "mDt55CkI": {
+            "string": "^whatIsInThisFood(<cap>)",
             "filter": null,
             "keep": false
         },
-        "hNcnUihP": {
-            "string": "waiting for something to do",
+        "VDTUT8g2": {
+            "string": "^whatIsInThisFood(<cap>)",
             "filter": null,
             "keep": false
+        },
+        "cFktJFQi": {
+            "string": "I can do a one thing at the moment\\nask me about a food for example @TABLEBOT what's in 'some food'",
+            "filter": null,
+            "keep": false
+        },
+        "zGj3vrcW": {
+            "string": "Sorry, didn't get that",
+            "filter": null,
+            "keep": false
+        },
+        "jjBBlztF": {
+            "string": "no, didn't get that",
+            "filter": null,
+            "keep": false
+        },
+        "UqhXhauj": {
+            "string": "no, didn't get that either",
+            "filter": null,
+            "keep": false
+        },
+        "ZkgmJCfC": {
+            "string": "((ah|ba|pa))!, this is rubbish I know - I didn't get that either",
+            "filter": null,
+            "keep": false
+        },
+        "OXlJaD3P": {
+            "string": "no sorry, try again",
+            "filter": null,
+            "keep": "keep"
         }
     },
     "checksums": {
-        "./chat/main.ss": "cce15f49ea24e6b2392ebb2a60b6555c26b4219d"
+        "./chat/main.ss": "27de00b3ff74be4e3c655023e944e084fd8adcd6"
     },
     "version": 1
 }

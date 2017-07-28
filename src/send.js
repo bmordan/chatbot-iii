@@ -1,18 +1,19 @@
 const config = require('config')
 const request = require('request')
 
-module.exports = function (err, reply) {
-  if (err) throw new Error(err)
+const { token, botId, roomId, baseUrl } = config.gitter
+
+module.exports = function (reply) {
   request.post({
-    url: `https://api.gitter.im/v1/rooms/${config.gitter.roomId}/chatMessages`,
+    url: `${baseUrl}/rooms/${roomId}/chatMessages`,
     headers: {
       ['Content-Type']: 'application/json',
       Accept: 'application/json',
-      Authorization: `Bearer ${config.gitter.token}`
+      Authorization: `Bearer ${token}`
     },
     body: {
       "text": reply.string
     },
     json: true
-  }, console.error(err))
+  })
 }

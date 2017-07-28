@@ -1,5 +1,7 @@
 # chatbot-III
 
+[![Join the chat at https://gitter.im/chatbot-iii/Lobby](https://badges.gitter.im/chatbot-iii/Lobby.svg)](https://gitter.im/chatbot-iii/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Here is a superscript chat bot intergrated into a gitter room.
 
 What you'll need to get started is a Github account for you and your bot.
